@@ -18,7 +18,7 @@ namespace parameters {
 const Height MAX_BLOCK_NUMBER               = 500000000;
 const uint32_t MAX_BLOCK_BLOB_SIZE          = 500000000;
 const uint32_t MAX_TX_SIZE                  = 1000000000;
-const uint64_t PUBLIC_ADDRESS_BASE58_PREFIX = 6;  // addresses start with "2"
+const uint64_t PUBLIC_ADDRESS_BASE58_PREFIX = 0xd7;  
 const Height MINED_MONEY_UNLOCK_WINDOW      = 10;
 const Timestamp BLOCK_FUTURE_TIME_LIMIT     = 60 * 60 * 2;
 
@@ -77,9 +77,9 @@ const size_t BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT = 10000;  // by default, blo
 const size_t BLOCKS_SYNCHRONIZING_DEFAULT_COUNT     = 100;    // by default, blocks count in blocks downloading
 const size_t COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT  = 1000;
 
-const uint16_t P2P_DEFAULT_PORT        = 8080;
-const uint16_t RPC_DEFAULT_PORT        = 8081;
-const uint16_t WALLET_RPC_DEFAULT_PORT = 8070;
+const uint16_t P2P_DEFAULT_PORT        = 8529;
+const uint16_t RPC_DEFAULT_PORT        = 8530;
+const uint16_t WALLET_RPC_DEFAULT_PORT = 8555;
 
 // const size_t P2P_CONNECTION_MAX_WRITE_BUFFER_SIZE        = 32 * 1024 * 1024;  // 32 Mb
 // const uint32_t P2P_DEFAULT_HANDSHAKE_INTERVAL            = 60;        // seconds
@@ -118,9 +118,9 @@ constexpr PublicKey CHECKPOINT_PUBLIC_KEYS_STAGENET[] = {
     common::pfh<PublicKey>("62020c71bbf2447ee588b28c15430434f2ceac8443c40b6e48b627e437110981")};
 
 const char *const SEED_NODES[] = {
-    "207.246.127.160:8080", "108.61.174.232:8080", "45.32.156.183:8080", "45.76.29.96:8080"};
+    "127.0.0.1:8529"};
 const char *const SEED_NODES_STAGENET[] = {
-    "207.246.127.160:10080", "108.61.174.232:10080", "45.32.156.183:10080", "45.76.29.96:10080"};
+    "127.0.0.1:18529";
 // testnet will have no seed nodes
 
 constexpr const SWCheckpoint CHECKPOINTS[] = {
