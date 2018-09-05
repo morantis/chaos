@@ -69,7 +69,7 @@ const char BLOCKS_FILENAME[]       = "blocks.bin";
 const char BLOCKINDEXES_FILENAME[] = "blockindexes.bin";
 }  // parameters
 
-const char CRYPTONOTE_NAME[] = "bytecoin";
+const char CRYPTONOTE_NAME[] = "chaoscoin";
 
 const uint8_t CURRENT_TRANSACTION_VERSION = 1;
 
